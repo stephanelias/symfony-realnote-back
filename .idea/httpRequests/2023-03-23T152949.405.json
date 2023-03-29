@@ -1,9 +1,9 @@
 {
   "type": "https:\/\/tools.ietf.org\/html\/rfc2616#section-10",
   "title": "An error occurred",
-  "status": 400,
-  "detail": "Invalid JSON.",
-  "class": "Symfony\\Component\\HttpKernel\\Exception\\BadRequestHttpException",
+  "status": 405,
+  "detail": "No route found for \"GET http:\/\/localhost:8000\/api\/users\": Method Not Allowed (Allow: POST)",
+  "class": "Symfony\\Component\\HttpKernel\\Exception\\MethodNotAllowedHttpException",
   "trace": [
     {
       "namespace": "",
@@ -11,196 +11,14 @@
       "class": "",
       "type": "",
       "function": "",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-http\/Authenticator\/JsonLoginAuthenticator.php",
-      "line": 143,
+      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/http-kernel\/EventListener\/RouterListener.php",
+      "line": 131,
       "args": []
     },
     {
-      "namespace": "Symfony\\Component\\Security\\Http\\Authenticator",
-      "short_class": "JsonLoginAuthenticator",
-      "class": "Symfony\\Component\\Security\\Http\\Authenticator\\JsonLoginAuthenticator",
-      "type": "->",
-      "function": "getCredentials",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-http\/Authenticator\/JsonLoginAuthenticator.php",
-      "line": 83,
-      "args": [
-        [
-          "object",
-          "Symfony\\Component\\HttpFoundation\\Request"
-        ]
-      ]
-    },
-    {
-      "namespace": "Symfony\\Component\\Security\\Http\\Authenticator",
-      "short_class": "JsonLoginAuthenticator",
-      "class": "Symfony\\Component\\Security\\Http\\Authenticator\\JsonLoginAuthenticator",
-      "type": "->",
-      "function": "authenticate",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-http\/Authenticator\/Debug\/TraceableAuthenticator.php",
-      "line": 60,
-      "args": [
-        [
-          "object",
-          "Symfony\\Component\\HttpFoundation\\Request"
-        ]
-      ]
-    },
-    {
-      "namespace": "Symfony\\Component\\Security\\Http\\Authenticator\\Debug",
-      "short_class": "TraceableAuthenticator",
-      "class": "Symfony\\Component\\Security\\Http\\Authenticator\\Debug\\TraceableAuthenticator",
-      "type": "->",
-      "function": "authenticate",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-http\/Authentication\/AuthenticatorManager.php",
-      "line": 172,
-      "args": [
-        [
-          "object",
-          "Symfony\\Component\\HttpFoundation\\Request"
-        ]
-      ]
-    },
-    {
-      "namespace": "Symfony\\Component\\Security\\Http\\Authentication",
-      "short_class": "AuthenticatorManager",
-      "class": "Symfony\\Component\\Security\\Http\\Authentication\\AuthenticatorManager",
-      "type": "->",
-      "function": "executeAuthenticator",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-http\/Authentication\/AuthenticatorManager.php",
-      "line": 154,
-      "args": [
-        [
-          "object",
-          "Symfony\\Component\\Security\\Http\\Authenticator\\Debug\\TraceableAuthenticator"
-        ],
-        [
-          "object",
-          "Symfony\\Component\\HttpFoundation\\Request"
-        ]
-      ]
-    },
-    {
-      "namespace": "Symfony\\Component\\Security\\Http\\Authentication",
-      "short_class": "AuthenticatorManager",
-      "class": "Symfony\\Component\\Security\\Http\\Authentication\\AuthenticatorManager",
-      "type": "->",
-      "function": "executeAuthenticators",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-http\/Authentication\/AuthenticatorManager.php",
-      "line": 136,
-      "args": [
-        [
-          "array",
-          [
-            [
-              "object",
-              "Symfony\\Component\\Security\\Http\\Authenticator\\Debug\\TraceableAuthenticator"
-            ]
-          ]
-        ],
-        [
-          "object",
-          "Symfony\\Component\\HttpFoundation\\Request"
-        ]
-      ]
-    },
-    {
-      "namespace": "Symfony\\Component\\Security\\Http\\Authentication",
-      "short_class": "AuthenticatorManager",
-      "class": "Symfony\\Component\\Security\\Http\\Authentication\\AuthenticatorManager",
-      "type": "->",
-      "function": "authenticateRequest",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-http\/Firewall\/AuthenticatorManagerListener.php",
-      "line": 40,
-      "args": [
-        [
-          "object",
-          "Symfony\\Component\\HttpFoundation\\Request"
-        ]
-      ]
-    },
-    {
-      "namespace": "Symfony\\Component\\Security\\Http\\Firewall",
-      "short_class": "AuthenticatorManagerListener",
-      "class": "Symfony\\Component\\Security\\Http\\Firewall\\AuthenticatorManagerListener",
-      "type": "->",
-      "function": "authenticate",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-http\/Authenticator\/Debug\/TraceableAuthenticatorManagerListener.php",
-      "line": 65,
-      "args": [
-        [
-          "object",
-          "Symfony\\Component\\HttpKernel\\Event\\RequestEvent"
-        ]
-      ]
-    },
-    {
-      "namespace": "Symfony\\Component\\Security\\Http\\Authenticator\\Debug",
-      "short_class": "TraceableAuthenticatorManagerListener",
-      "class": "Symfony\\Component\\Security\\Http\\Authenticator\\Debug\\TraceableAuthenticatorManagerListener",
-      "type": "->",
-      "function": "authenticate",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-bundle\/Debug\/WrappedLazyListener.php",
-      "line": 46,
-      "args": [
-        [
-          "object",
-          "Symfony\\Component\\HttpKernel\\Event\\RequestEvent"
-        ]
-      ]
-    },
-    {
-      "namespace": "Symfony\\Bundle\\SecurityBundle\\Debug",
-      "short_class": "WrappedLazyListener",
-      "class": "Symfony\\Bundle\\SecurityBundle\\Debug\\WrappedLazyListener",
-      "type": "->",
-      "function": "authenticate",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-http\/Firewall\/AbstractListener.php",
-      "line": 26,
-      "args": [
-        [
-          "object",
-          "Symfony\\Component\\HttpKernel\\Event\\RequestEvent"
-        ]
-      ]
-    },
-    {
-      "namespace": "Symfony\\Component\\Security\\Http\\Firewall",
-      "short_class": "AbstractListener",
-      "class": "Symfony\\Component\\Security\\Http\\Firewall\\AbstractListener",
-      "type": "->",
-      "function": "__invoke",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-bundle\/Debug\/TraceableFirewallListener.php",
-      "line": 73,
-      "args": [
-        [
-          "object",
-          "Symfony\\Component\\HttpKernel\\Event\\RequestEvent"
-        ]
-      ]
-    },
-    {
-      "namespace": "Symfony\\Bundle\\SecurityBundle\\Debug",
-      "short_class": "TraceableFirewallListener",
-      "class": "Symfony\\Bundle\\SecurityBundle\\Debug\\TraceableFirewallListener",
-      "type": "->",
-      "function": "callListeners",
-      "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/security-http\/Firewall.php",
-      "line": 92,
-      "args": [
-        [
-          "object",
-          "Symfony\\Component\\HttpKernel\\Event\\RequestEvent"
-        ],
-        [
-          "object",
-          "Generator"
-        ]
-      ]
-    },
-    {
-      "namespace": "Symfony\\Component\\Security\\Http",
-      "short_class": "Firewall",
-      "class": "Symfony\\Component\\Security\\Http\\Firewall",
+      "namespace": "Symfony\\Component\\HttpKernel\\EventListener",
+      "short_class": "RouterListener",
+      "class": "Symfony\\Component\\HttpKernel\\EventListener\\RouterListener",
       "type": "->",
       "function": "onKernelRequest",
       "file": "\/Users\/stephane.elias\/Projects\/realnote\/symfony-realnote-back\/vendor\/symfony\/event-dispatcher\/Debug\/WrappedListener.php",

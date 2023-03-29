@@ -1,0 +1,12 @@
+{
+  "@context": "\/api\/contexts\/User",
+  "@id": "\/api\/users\/4",
+  "@type": "User",
+  "id": 4,
+  "username": "yeat",
+  "roles": [
+    "ROLE_USER"
+  ],
+  "password": "$2y$13$yQbOrFlN7XaTV\/ZHLufAnOXmpzYjimxgQwF5Eir\/dcqBbUbQp0abi",
+  "userIdentifier": "yeat"
+}

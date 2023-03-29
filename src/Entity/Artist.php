@@ -9,12 +9,13 @@ use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\Patch;
 use ApiPlatform\Metadata\Post;
 use App\Repository\ArtistRepository;
+use App\Repository\ProjectRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Symfony\Component\Serializer\Annotation\MaxDepth;
-
+#[ORM\Entity(repositoryClass: ArtistRepository::class)]
 #[ApiResource]
 class Artist
 {

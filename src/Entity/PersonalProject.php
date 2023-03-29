@@ -31,6 +31,9 @@ class PersonalProject
     #[ORM\OneToMany(mappedBy: 'personalProject', targetEntity: RankedTitle::class)]
     private Collection $rankedTitles;
 
+    #[ORM\ManyToOne(inversedBy: 'personalProjects')]
+    private ?User $user = null;
+
     public function __construct()
     {
         $this->rankedTitles = new ArrayCollection();
@@ -115,6 +118,18 @@ class PersonalProject
                 $rankedTitle->setPersonalProject(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }

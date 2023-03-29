@@ -56,6 +56,8 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         $this->save($user, true);
     }
 
+
+
 //    /**
 //     * @return User[] Returns an array of User objects
 //     */
@@ -80,4 +82,5 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
 //            ->getOneOrNullResult()
 //        ;
 //    }
+
 }

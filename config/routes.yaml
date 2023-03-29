@@ -6,3 +6,13 @@ controllers:
 
 api_login_check:
     path: /api/login_check
+
+api_get_user_id_by_username:
+    path: '/api/users/{username}/id'
+    methods: ['GET']
+    controller: App\Controller\UserIdController::__invoke
+    defaults:
+        _api_resource_class: App\Entity\User
+        _api_item_operation_name: get_user_id_by_username
+    requirements:
+        username: '\w+'

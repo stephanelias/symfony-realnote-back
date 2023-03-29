@@ -4,15 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00aa05c2-dcd6-4be2-8286-ff1984942ab9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Title.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="00aa05c2-dcd6-4be2-8286-ff1984942ab9" name="Changes" comment="JWT Token">
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T112746.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T112925.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T112938.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T112948.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T113222.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T113247.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T113353.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T113359.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T114302.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T115406.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T120050.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T120113.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T120116.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T120134.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T120201.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T120228.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T120440.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-03-21T120443.401.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Artist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,17 +155,29 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="HTTP Request.rest-api_1 | Aller sur la page swagger">
+  <component name="RunManager" selected="HTTP Request.rest-api_1 | Get spotify token">
     <configuration name="rest-api_1 | Aller sur la page swagger" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" index="2" requestIdentifier="Aller sur la page swagger" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="rest-api_1 | Connexion" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" requestIdentifier="Connexion" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="rest-api_1 | Get current user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" index="3" requestIdentifier="Get current user" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_1 | Get id user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" index="3" requestIdentifier="Get id user" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_1 | Get spotify token" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" index="4" requestIdentifier="Get spotify token" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.rest-api_1 | Aller sur la page swagger" />
+        <item itemvalue="HTTP Request.rest-api_1 | Get spotify token" />
+        <item itemvalue="HTTP Request.rest-api_1 | Get current user" />
         <item itemvalue="HTTP Request.rest-api_1 | Connexion" />
+        <item itemvalue="HTTP Request.rest-api_1 | Get id user" />
+        <item itemvalue="HTTP Request.rest-api_1 | Aller sur la page swagger" />
       </list>
     </recent_temporary>
   </component>
@@ -161,11 +195,25 @@
       <workItem from="1679389951524" duration="172000" />
       <workItem from="1679391482018" duration="811000" />
       <workItem from="1679392368745" duration="5413000" />
-      <workItem from="1679397800197" duration="4411000" />
+      <workItem from="1679397800197" duration="8905000" />
+      <workItem from="1679501777565" duration="35000" />
+      <workItem from="1679558719722" duration="19870000" />
     </task>
+    <task id="LOCAL-00001" summary="JWT Token">
+      <created>1679407298973</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679407298973</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="JWT Token" />
+    <option name="LAST_COMMIT_MESSAGE" value="JWT Token" />
   </component>
 </project>

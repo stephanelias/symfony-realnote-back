@@ -1,0 +1,10 @@
+{
+  "@context": "\/api\/contexts\/User",
+  "@id": "\/api\/users\/4",
+  "@type": "User",
+  "id": 4,
+  "username": "testuser",
+  "roles": [
+    "ROLE_USER"
+  ]
+}
